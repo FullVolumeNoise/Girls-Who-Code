@@ -1,0 +1,60 @@
+<html>
+<body>
+
+<h2> STEP 2 </h2>
+  <p>JavaScript can show hidden HTML elements.</p>
+
+  <p id="demo" style="display:none">Hello JavaScript!</p>
+
+  <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+<h2> self test</h2>
+  <p> Test, test </p>
+  <button onclick="document.getElementById('myImage2').src='http://78.media.tumblr.com/bcd761d68657f5ae7c5a9c50046e4056/tumblr_nvljydG9vV1utc6qeo1_500.gif'">Glow</button>
+
+  <img id="myImage2" src="https://i.gifer.com/D2fj.gif" style="width:100px">
+  <button onclick="document.getElementById('myImage2').src='https://i.gifer.com/D2fj.gif'">Wet eyes</button
+
+
+<!-- //Textbox input -->
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+
+<h1> FORM TEST</h1>
+<form name="myForm"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+
+<input id="n">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var x, text;
+  //Get value of the input field with id="number"
+  x = document.getElementById("n").value;
+
+//If x is Not A Number or less than 1 or greater than 10
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+
+  } else{
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+  alert(text);
+}
+</script>
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+</body>
+</html>
