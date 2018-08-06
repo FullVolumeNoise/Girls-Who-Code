@@ -1,3 +1,8 @@
+//BASED ON TEAM CODE AND https://www.openprocessing.org/sketch/539124 
+//https://www.openprocessing.org/curation/25/
+// MARIO CODE http://processingjs.nihongoresources.com/test/PjsGameEngine/docs/tutorial/mario.html
+// COLLISION DETECTION BASE http://www.jeffreythompson.org/collision-detection/rect-rect.php
+
 //global
 int lives = relief
 int relief = 0;
